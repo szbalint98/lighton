@@ -1,0 +1,18 @@
+main{
+    box-sizing: border-box;
+}
+button{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    
+    
+}
+#mezo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+}
