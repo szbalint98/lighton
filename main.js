@@ -1,4 +1,4 @@
-import {korokletrehoz} from './jatek.js'
+import {korokletrehoz,clickevent} from './jatek.js'
 $(document).ready(function(){
     foprogram();
     
@@ -6,4 +6,5 @@ $(document).ready(function(){
 function foprogram() {
     const jatekter=$('#mezo');
     jatekter.html(korokletrehoz());
+    clickevent();
 }
