@@ -4,6 +4,7 @@ export function ujjatek() {
     const indexe = kivalasztott.val();
     const jatekter = $("#mezo");
     jatekter.html(korokletrehoz(indexe));
+    jatekter.removeClass('mezo9 mezo16 mezo25')
     jatekter.addClass(`mezo${indexe}`);
 
     const gombok = $(".gomb");
