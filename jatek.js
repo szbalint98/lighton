@@ -1,15 +1,22 @@
-export function korokletrehoz() {
-    let txt = "";
+export function ujjatek() {
+  $("#uj").on("click", function () {
+    const kivalasztott = $("#valaszt");
+    const indexe = kivalasztott.val();
+    const jatekter = $("#mezo");
+    jatekter.html(korokletrehoz(indexe));
+    jatekter.addClass(`mezo${indexe}`);
 
-  for (let index = 0; index < 9; index++) {
+    const gombok = $(".gomb");
+    gombok.on("click", function () {
+      console.log(this);
+      $(this).toggleClass("sarga");
+    });
+  });
+}
+export function korokletrehoz(db) {
+  let txt = "";
+  for (let index = 0; index < db; index++) {
     txt += `<button class="gomb" id="${index}"></button>`;
   }
   return txt;
-}
-export function clickevent() {
-  const gombok=$('.gomb')
-  gombok.on('click',function() {
-      
-      console.log(this)
-  })
 }

@@ -1,8 +1,14 @@
-main{
+body{
     box-sizing: border-box;
-    text-align: center;
+    background-color: rgb(128, 56, 221);
 }
-button{
+main{
+    padding-top: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.gomb{
     border: 1px solid black;
     border-radius: 50%;
     height: 80px;
@@ -10,10 +16,42 @@ button{
     margin: 5px;
     
 }
-#mezo{
-    padding-top: 200px;
+.mezo9{
+    padding-top: 100px;
     width: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+}
+.mezo16{
+    padding-top: 100px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+.mezo25{
+    padding-top: 100px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.sarga{
+    background-color: yellow;
+}
+.zold{
+    background-color: green;
+}
+label{
+    
+    font-size: 15pt;
+    font-weight: bold;
+}
+#uj{
+
+    margin-top: 10px;
+    height: 25px;
+    width: 70px;
 }

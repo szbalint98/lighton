@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="mezo"></div>
+      <label for="valaszt">Kérem adja meg hány db kör legyen</label>
+      <div id="selector">
+        <select id="valaszt">
+          <option value="9">9</option>
+          <option value="16">16</option>
+          <option value="25">25</option>
+        </select>
+      </div>
+      <button id="uj">Új játék</button>
+      
+      <div id="mezo"></div>
     </main>
-</body>
+  </body>
 </html>
